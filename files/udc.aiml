@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+      <pattern>HELLO</pattern>
+      <template>Hello Student! What is your name?</template>
+  </category>
+  
+  <category>
+      <pattern>HELLO *</pattern>
+      <template>Hello Student! What is your name?
+        </template>
+    </category>
+  
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Hello <set name="firstname"><star/></set>!<br/>
+    Do you enjoy working with people and tech, or with code and datasets?
+    <button><text>People and Tech</text>
+      <postback>People and Tech</postback>
+    </button>
+    <button>
+      <text>Code and Datasets</text>
+      <postback>Code and Datasets</postback>
+        </button>
+    
+    </template>
+    
+    </category>
+    
+    
+  <!-- Data Science, SWE, Network Engineer, IT Technician, Cybersecurity -->
+  
+  <!--
+****************************************
+*                                      *
+*              * START *              *
+*                                      *
+****************************************
+-->
+  
+  
+    <!-- IT Technician, Network Engineer, Cybersecurity -->
+<category>
+    <pattern>PEOPLE AND TECH</pattern>
+    <template>Which strength do you align with?
+    <button>
+      <text>Hardware Repair</text>
+      <postback>Hardware Repair</postback>
+    </button>
+    <button>
+      <text>Network Infrastructure</text>
+      <postback>Network Infrastructure</postback>
+        </button>
+    <button>
+        <text>Threat Response</text>
+        <postback>Threat Response</postback>
+    </button>
+        </template>
+        </category>
+
+    
+    <!-- SWE, DS -->
+<category>   
+    <pattern>CODE AND DATASETS</pattern>
+     <template>Which strength do you align with?
+   <button><text>Testing and Debugging</text>
+      <postback>Testing and Debugging</postback>
+    </button>
+    <button>
+      <text>Storytelling with Datasets</text>
+      <postback>Storytelling with Datasets</postback>
+        </button>
+     </template>
+    </category>
+  
+ 
+ <!-- More Definitive Questions -->  
+ 
+<!-- SWE, DS -->
+  <category>
+    <pattern>TESTING AND DEBUGGING</pattern>
+    <template>Do you enjoy building applications from scratch and resolving bugs?
+    <button><text>Yes, I enjoy building applications from scratch and resolving bugs</text>
+      <postback>Yes, I enjoy building applications from scratch and resolving bugs</postback>
+    </button>
+    <button>
+      <text>No, I do not enjoy building applications from scratch and resolving bugs</text>
+      <postback>No, I do not enjoy building applications from scratch and resolving bugs</postback>
+        </button>
+    </template>
+  </category>
+ 
+  <category>
+    <pattern>STORYTELLING WITH DATASETS</pattern>
+    <template>Do you enjoy making stories from messy and large datasets using Python or R?
+    <button><text>Yes, I enjoy making stories from messy and large datasets using Python or R</text>
+      <postback>Yes, I enjoy making stories from messy and large datasets using Python or R</postback>
+    </button>
+    <button>
+      <text>No, I do not enjoy making stories from messy and large datasets using Python or R</text>
+      <postback>No, I do not enjoy making stories from messy and large datasets using Python or R</postback>
+        </button>
+    </template>
+  </category>
+
+
+<!-- IT, NW, CS -->
+  <category>
+    <pattern>HARDWARE REPAIR</pattern>
+    <template>Do you enjoy responding to emergency or routine repairs?
+    <button><text>Yes, I enjoy responding to emergency or routine repairs</text>
+      <postback>Yes, I enjoy responding to emergency or routine repairs</postback>
+    </button>
+    <button>
+      <text>No, I do not enjoy responding to emergency or routine repairs</text>
+      <postback>No, I do not enjoy responding to emergency or routine repairs</postback>
+        </button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>NETWORK INFRASTRUCTURE</pattern>
+    <template>Do you enjoy designing and maintaining network infrastructure?
+    <button><text>Yes, I enjoy designing and maintaining network infrastructure</text>
+      <postback>Yes, I enjoy designing and maintaining network infrastructure</postback>
+    </button>
+    <button>
+      <text>No, I do not enjoy designing and maintaining network infrastructure</text>
+      <postback>No, I do not enjoy designing and maintaining network infrastructure</postback>
+        </button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>THREAT RESPONSE</pattern>
+    <template>Do you enjoy working in secure environments with sensitive information?
+    <button><text>Yes, I enjoy working in secure environments with sensitive information</text>
+      <postback>Yes, I enjoy working in secure environments with sensitive information</postback>
+    </button>
+    <button>
+      <text>No, I do not enjoy working in secure environments with sensitive information</text>
+      <postback>No, I do not enjoy working in secure environments with sensitive information</postback>
+        </button>
+    </template>
+  </category>
+
+<!-- Specific Questions -->
+<!-- SWE YES and NO -->
+  <category>
+    <pattern>YES, I ENJOY BUILDING APPLICATIONS FROM SCRATCH AND RESOLVING BUGS</pattern>
+    <template><srai>SWE CAREER</srai></template>
+  </category>
+  
+    <category>
+    <pattern>YEAH, I ENJOY BUILDING APPLICATIONS FROM SCRATCH AND RESOLVING BUGS</pattern>
+    <template><srai>SWE CAREER</srai></template>
+  </category>
+  
+  <category>
+    <pattern>NO, I DO NOT ENJOY BUILDING APPLICATIONS FROM SCRATCH AND RESOLVING BUGS</pattern>
+    <template>No worries! Do you enjoy making stories from messy and large datasets using Python or R?
+    <button><text>Yeah, I enjoy making stories from messy and large datasets using Python or R</text>
+    <postback>Yeah, I enjoy making stories from messy and large datasets using Python or R</postback>
+    </button>
+    <button><text>Nope, I do not enjoy making stories from messy and large datasets using Python or R</text>
+    <postback>Nope, I do not enjoy making stories from messy and large datasets using Python or R</postback>
+        </button>
+    </template>
+  </category>
+  
+<!-- DS YES and NO -->  
+  <category>
+    <pattern>YES, I ENJOY MAKING STORIES FROM MESSY AND LARGE DATASETS USING PYTHON OR R</pattern>
+    <template><srai>DS CAREER</srai></template>
+  </category>
+  
+    <category>
+    <pattern>YEAH, I ENJOY MAKING STORIES FROM MESSY AND LARGE DATASETS USING PYTHON OR R</pattern>
+    <template><srai>DS CAREER</srai></template>
+  </category>
+  
+  <category>
+    <pattern>NO, I DO NOT ENJOY MAKING STORIES FROM MESSY AND LARGE DATASETS USING PYTHON OR R</pattern>
+    <template>No worries! Do you enjoy building applications from scratch and resolving bugs?
+    <button><text>Yeah, I enjoy building applications from scratch and resolving bugs</text>
+      <postback>Yeah, I enjoy building applications from scratch and resolving bugs</postback>
+    </button>
+    <button>
+      <text>Nope, I do not enjoy building applications from scratch and resolving bugs</text>
+      <postback>Nope, I do not enjoy building applications from scratch and resolving bugs</postback>
+        </button>
+    </template>
+  </category>
+
+<!-- NETWORK YES and NO -->
+  <category>
+    <pattern>YES, I ENJOY DESIGNING AND MAINTAINING NETWORK INFRASTRUCTURE</pattern>
+    <template><srai>NETWORK CAREER</srai></template>
+  </category>
+  
+   <category>
+    <pattern>YEAH, I ENJOY DESIGNING AND MAINTAINING NETWORK INFRASTRUCTURE</pattern>
+    <template><srai>NETWORK CAREER</srai></template>
+  </category>
+  <category>
+      
+    <pattern>NO, I DO NOT ENJOY DESIGNING AND MAINTAINING NETWORK INFRASTRUCTURE</pattern>
+    <template>Okay! Do you enjoy responding to emergency or routine repairs?
+        <button><text>Yeah, I enjoy responding to emergency or routine repairs</text>
+      <postback>Yeah, I enjoy responding to emergency or routine repairs</postback>
+    </button>
+    <button>
+      <text>Nope, I do not enjoy responding to emergency or routine repairs</text>
+      <postback>Nope, I do not enjoy responding to emergency or routine repairs</postback>
+        </button>
+    </template>
+  </category>
+
+
+<!-- CYBER YES and NO -->
+  <category>
+    <pattern>YES, I ENJOY WORKING IN SECURE ENVIRONMENTS WITH SENSITIVE INFORMATION</pattern>
+    <template><srai>CYBERSEC CAREER</srai></template>
+  </category>
+ 
+   <category>
+    <pattern>YEAH, I ENJOY WORKING IN SECURE ENVIRONMENTS WITH SENSITIVE INFORMATION</pattern>
+    <template><srai>CYBERSEC CAREER</srai></template>
+  </category>
+ 
+  <category>
+    <pattern>NO, I DO NOT ENJOY WORKING IN SECURE ENVIRONMENTS WITH SENSITIVE INFORMATION</pattern>
+    <template>Okay! Do you enjoy designing and maintaining network infrastructure?
+        <button><text>Yeah, I enjoy designing and maintaining network infrastructure</text>
+      <postback>Yeah, I enjoy designing and maintaining network infrastructure</postback>
+    </button>
+    <button>
+      <text>Nope, I do not enjoy designing and maintaining network infrastructure</text>
+      <postback>Nope, I do not enjoy designing and maintaining network infrastructure</postback>
+        </button>
+    </template>
+  </category>
+
+
+<!-- IT YES and NO --> 
+  <category>
+    <pattern>YES, I ENJOY RESPONDING TO EMERGENCY OR ROUTINE REPAIRS</pattern>
+    <template><srai>IT CAREER</srai></template>
+  </category>
+
+  <category>
+    <pattern>YEAH, I ENJOY RESPONDING TO EMERGENCY OR ROUTINE REPAIRS</pattern>
+    <template><srai>IT CAREER</srai></template>
+  </category>
+
+  <category>
+    <pattern>NO, I DO NOT ENJOY RESPONDING TO EMERGENCY OR ROUTINE REPAIRS</pattern>
+    <template>No worries! Do you enjoy working in secure environments with sensitive information?
+        <button><text>Yeah, I enjoy working in secure environments with sensitive information</text>
+      <postback>Yeah, I enjoy working in secure environments with sensitive information</postback>
+    </button>
+    <button>
+      <text>Nope, I do not enjoy working in secure environments with sensitive information</text>
+      <postback>Nope, I do not enjoy working in secure environments with sensitive information</postback>
+        </button>
+    </template>
+  </category>
+
+
+
+<!-- No's to the no worries --> 
+
+    <category>
+        <pattern>Nope, I do not enjoy designing and maintaining network infrastructure</pattern>
+        <template>I'm sorry. It looks like you don't match with any of our CS career options.<br/>
+    Click the link below, if you would like to know more about other options.<br/>
+        <button><text>About Computer Science Fields</text>
+        <url>https://www.coursera.org/articles/computer-science-jobs-for-the-future</url></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Nope, I do not enjoy responding to emergency or routine repairs</pattern>
+        <template>I'm sorry. It looks like you don't match with any of our CS career options.<br/>
+    Click the link below, if you would like to know more about other options.<br/>
+        <button><text>About Computer Science Fields</text>
+        <url>https://www.coursera.org/articles/computer-science-jobs-for-the-future</url></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Nope, I do not enjoy building applications from scratch and resolving bugs</pattern>
+        <template>I'm sorry. It looks like you don't match with any of our CS career options.<br/>
+    Click the link below, if you would like to know more about other options.<br/>
+        <button><text>About Computer Science Fields</text>
+        <url>https://www.coursera.org/articles/computer-science-jobs-for-the-future</url></button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Nope, I do not enjoy working in secure environments with sensitive information</pattern>
+        <template>I'm sorry. It looks like you don't match with any of our CS career options.<br/>
+    Click the link below, if you would like to know more about other options.<br/>
+        <button><text>About Computer Science Fields</text>
+        <url>https://www.coursera.org/articles/computer-science-jobs-for-the-future</url></button>
+        </template>
+    </category>
+
+
+  <category>
+     <pattern>Nope, I do not enjoy making stories from messy and large datasets using Python or R</pattern>
+    <template>I'm sorry. It looks like you don't match with any of our CS career options.<br/>
+    Click the link below, if you would like to know more about other options.<br/>
+        <button><text>About Computer Science Fields</text>
+        <url>https://www.coursera.org/articles/computer-science-jobs-for-the-future</url></button>
+        </template>
+  </category>
+
+
+
+
+
+<!-- CAREER TEMPLATES -->  
+  <category>
+    <pattern>DS CAREER</pattern>
+    <template>
+      You may enjoy being a Data Scientist! Click the link to learn more.<br/>
+        <button><text>About Data Science</text>
+        <url>https://seas.harvard.edu/news/what-data-science-definition-skills-applications-more</url></button>
+    </template> 
+  </category>
+
+  <category>
+    <pattern>SWE CAREER</pattern>
+    <template>You may enjoy being a Software Engineer! Click the link to learn more.<br/>
+      <button><text>About Software Engineering</text>
+        <url>https://www.cisco.com/site/us/en/learn/training-certifications/tech-roles/network-engineer.html</url></button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>NETWORK CAREER</pattern>
+        <template>
+          You may enjoy being a Network Engineer! Click the link to learn more.<br/>
+          <button><text>About Network Engineering</text>
+            <url>https://www.mtu.edu/cs/undergraduate/software/what/</url>
+          </button>
+        </template>
+  </category>
+
+  <category>
+    <pattern>IT CAREER</pattern>
+    <template>
+      You may enjoy being a Service Desk Technician! Click the link to learn more.<br/>
+        <button><text>About IT Technician</text>
+        <url>https://www.franklin.edu/career-guide/computer-user-support-specialists/what-do-service-desk-technicians-do</url></button>
+    </template>
+  </category>
+
+  <category>
+    <pattern>CYBERSEC CAREER</pattern>
+    <template>
+      You may enjoy being a Cybersecurity Analyst! Click the link to learn more.<br/>
+        <button><text>About Cybersecurity</text>
+        <url>https://www.wgu.edu/career-guide/information-technology/cybersecurity-analyst-career.html</url></button>
+    </template>
+  </category>
+  
+
+
+<!-- CATCH ANY OUTLIERS -->
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+
+</aiml>
