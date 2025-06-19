@@ -335,7 +335,7 @@
     <pattern>SWE CAREER</pattern>
     <template>You may enjoy being a Software Engineer! Click the link to learn more.<br/>
       <button><text>About Software Engineering</text>
-        <url>https://www.cisco.com/site/us/en/learn/training-certifications/tech-roles/network-engineer.html</url></button>
+        <url>https://www.mtu.edu/cs/undergraduate/software/what/</url></button>
     </template>
   </category>
 
@@ -344,7 +344,7 @@
         <template>
           You may enjoy being a Network Engineer! Click the link to learn more.<br/>
           <button><text>About Network Engineering</text>
-            <url>https://www.mtu.edu/cs/undergraduate/software/what/</url>
+            <url>https://www.cisco.com/site/us/en/learn/training-certifications/tech-roles/network-engineer.html</url>
           </button>
         </template>
   </category>
